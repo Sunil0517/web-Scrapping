@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Anime Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+
+  </head>
+  <body style="background-color: black;">
+
+    
+    <!-- nav bar -->
+    <nav class="navbar  bg-black text-white">
+      <div class="container-fluid col-sm-6 bg-black text-white">
+        <a class="navbar-brand" href="#">
+        </a>
+        <a class="navbar-brand text-white  ">Anime Store</a>
+        <form class="d-flex" role="search">          
+          <input
+                type="search"
+                id="default-search"
+                class="form-control me-2 block w-full  pl-10 text-sm text-gray-900 border"
+                placeholder="Search"
+                aria-label="Search"
+                required
+                oninput="searchCards(this.value)"
+            />
+        </form>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <header class="mb-5">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('https://img1.wallspic.com/crops/6/2/1/2/7/172126/172126-anime-yuji_itadori-ryomen_sukuna-jujutsu_kaisen-cartoon-3840x2160.jpg')">
+            <div class="carousel-caption">
+              <h5>#1 Spotlight</h5>
+              <p>Ryomen Sukuna</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('https://img2.wallspic.com/crops/9/2/1/2/7/172129/172129-anime-dragon_ball_super-goku-zamasu-dragon_ball-3840x2160.jpg')">
+            <div class="carousel-caption">
+              <h5>#2 Spotlight </h5>
+              <p> Goku</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('https://img1.wallspic.com/crops/9/5/6/1/7/171659/171659-tokyo_revengers-takemichi_hanagaki-draken-anime-hair-3840x2160.jpg')">
+            <div class="carousel-caption">
+              <h5>#3 Spotlight</h5>
+              <p>Takemichi Hanagaki & Draken</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- offer section  -->
+    <div class="custom-container">
+      <div class="row mt-4  md-5" >
+        <h1 class="display-1 text-success text-center title"> Special offer</h1>
+      </div>
+      <div class="row " style="justify-content: center;">
+        <div class="new-card">
+          
+            <img class="card-img-top" src="https://img3.wallspic.com/crops/9/8/0/6/2/126089/126089-clan_uchiha-kakashi_hatake-sharingan-illustration-animation-3840x2160.jpg" alt="Card image cap">
+            <div class="card-body ">
+              <h5 class="card-title">Itachi</h5>
+              <p class="card-text">Naruto</p>
+              <p class="card-text">$10</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          
+        </div>
+        <div class="new-card">
+          
+            <img class="card-img-top" src="https://img3.wallspic.com/crops/7/4/8/8/6/168847/168847-anime-anime_girl-anime_art-cartoon-anime_friends_brazil-3840x2160.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Suzume Iwato</h5>
+              <p class="card-text">Suzume</p>
+              <p class="card-text">$10</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          
+        </div>
+        <div class="new-card">
+          
+            <img class="card-img-top" src="https://img1.wallspic.com/crops/6/5/2/9/1/119256/119256-woman_in_green_shirt_holding_green_textile-3840x2160.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Erin Yager</h5>
+              <p class="card-text">Attack on titan</p>
+              <p class="card-text">$10</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          
+        </div>
+    </div>  
+    </div>
+
+    <!-- add new Poster -->
+    <div class="custom-container">
+        <h1 >Add New Poster</h1>
+        <form>
+            <div class="row">
+                <div class="col-sm-12 col-md-3 mb-3">
+                    <input type="text" class="form-control" id="imageURL" placeholder="Enter Image URL" required>
+                </div>
+                <div class="col-sm-12 col-md-3 mb-3">
+                    <input type="text" class="form-control" id="title" placeholder="Enter Title" required>
+                </div>
+                <div class="col-sm-12 col-md-3 mb-3">
+                    <input type="text" class="form-control" id="animeName" placeholder="Enter Anime Name" required>
+                </div>
+                <div class="col-sm-12 col-md-3 mb-3">
+                    <input type="number" class="form-control" id="price" placeholder="Enter Price" required>
+                </div>
+                <div class="col-sm-12 col-md-3 mb-3">
+                    <button type="submit" class="btn btn-primary" onclick="addPoster()">Add Poster</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="row mt-5 "  id = "deals">
+      <h1 class="display-1 text-success text-center "> Other Deals</h1>
+    </div>
+    <!-- cards -->
+      <div class="container row text-white">
+      </div>
+    
+
+        
+
+    <!-- footer -->
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5>About Us</h5>
+                  <p>We are passionate about bringing the world of anime closer to you, offering a wide range of posters featuring your favorite characters and scenes</p>
+              </div>
+              <div class="col-md-4">
+                  <h5>Contact Us</h5>
+                  <p>Email: contact@animeposter.com</p>
+                  <p>Phone: +1 (123) 456-7890</p>
+              </div>
+              <div class="col-md-4">
+                  <h5>Follow Us</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="#">Instagram</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>

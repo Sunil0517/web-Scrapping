@@ -1,0 +1,132 @@
+/* nav bar */
+
+/* Style for the navbar */
+.navbar {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+/* Style for the search input and button */
+.form-control {
+  background-color: rgba(165, 163, 163, 0.7); /* Use rgba for transparency */
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container-fluid {
+    display: block; /* Change display property to block for smaller screens */
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .form-control {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+/* Carousel */
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  img {
+    margin: 0;
+    display: block;
+    margin-top: 20%;
+  }
+
+.container{
+    margin: auto;
+    display: auto;
+}
+
+.card{
+  min-width: 200px;
+}
+
+/* Define the custom-container class */
+.custom-container {
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set the text color to white */
+  padding: 30px; /* Add some padding to provide spacing inside the container */
+  border-radius: 5px; /* Add rounded corners to the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+  justify-content: center;
+}
+
+ 
+/* Apply these styles to the new-card class */
+.new-card {
+  width: calc(33.33% - 20px); /* Set the width for each card, accounting for margins */
+  margin-right: 20px; /* Add a right margin to separate cards */
+  margin-bottom: 20px; /* Add a bottom margin to separate rows */
+  box-sizing: border-box; /* Include padding and borders in the width calculation */
+
+  /* Additional styling for the card */
+  padding: 15px;
+  background-color: #030303;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* Add a smooth transform effect on hover */
+
+  /* Center the content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .new-card {
+      width: calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .new-card {
+      width: 100%; /* One card per row on extra small screens */
+  }
+}
+
+/* Add hover effect */
+.new-card:hover { 
+  transform: scale(1.05); /* Increase the card size on hover */
+  cursor: pointer;
+}
+
+
+.title {
+  font-weight: bold; /* Set text to bold */
+   /* Set the font size to display-1 size (adjust as needed) */
+  color: darkgreen; /* Set the text color to dark green */
+}
